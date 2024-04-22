@@ -276,15 +276,16 @@ body {
 }
 
 #container-content {
+    box-shadow: 0px 7px 13px #171718;;
     padding: 2px;
     position: relative;
-    top: -3.8rem;
+    top: 0.8rem;
 }
 
 #logo img {
     position: absolute;
     right: 70%;
-    top: -65.5%;
+    top: -73.5%;
     max-width: 8em;
 }
 
