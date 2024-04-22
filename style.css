@@ -218,11 +218,12 @@ body {
 }
     /* Set up the navigation to initially be hidden and roll down from the top */
 .nav {
+    z-index: 1000;
     position: fixed;
     top: 1.5em; /* Adjust this based on the height of your hamburger menu */
     left: 0;
     width: 100%; /* Full width or adjust as needed */
-    background-color: #0b1e58;
+    background-color: #020e3121;
     overflow: hidden;
     max-height: 0; /* Start with no height */
     transition: max-height 0.8s ease-in-out;
@@ -230,24 +231,27 @@ body {
 
 /* Use a class to control the open/close state of the menu */
 .nav.open {
+    z-index: 1000;
     max-height: 800px; /* Adjust as needed to fit content */
 }
 
 /* This will style the navigation links */
 .nav-ul {
+    z-index: 1000;
     padding: 0;
-    margin: 0;
+    margin: -7px;
     list-style: none;
     display: block;
 }
 
 .nav-ul li a {
+    z-index: 1000;
     display: block;
-    padding: 0.5rem 12rem;
+    padding: 0.4rem 5rem;
     text-decoration: none;
     color: white;
     font-family: "Exo 2", sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.77rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional */
 }
 
@@ -265,11 +269,32 @@ body {
 }
 
 #leng-swich.leng-visible {
+    display: grid;
     position: absolute;
-    top: 3%;
-    right: 90%;
+    top: 69%;
+    right: 2.2%;
+}
+
+#container-content {
+    padding: 2px;
+    position: relative;
+    top: -3.8rem;
+}
+
+#logo img {
+    position: absolute;
+    right: 70%;
+    top: -65.5%;
+    max-width: 8em;
+}
+
+.leng-button {
+    border-radius: 8px;
+}
+
+
 }
 
 
     
-}
+
